@@ -10,5 +10,8 @@ Vagrant.configure("2") do |config|
   end
 
   # provisioning
-  config.vm.provision :shell, :path => "bin/bootstrap.sh"
+  config.vm.provision :shell, :path => "vm/bootstrap.sh"
+
+  # file sharing with host
+  config.vm.synced_folder ".", "/home/vagrant/project"
 end
