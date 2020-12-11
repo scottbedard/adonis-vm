@@ -14,4 +14,5 @@ npm install pm2 -g
 
 # install nginx
 apt-get -y install nginx
+cp /home/vagrant/project/vm/stubs/nginx_default /etc/nginx/sites-available/default
 service nginx start
